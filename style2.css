@@ -50,6 +50,18 @@ h2{
   color: #ffffff;
 }
 
+.announcement-bar:hover{
+  background-color: #fbc55d;
+}
+
+.main-content{
+  height:600px;
+}
+
+footer{
+  background-color: #333;
+}
+
 /*hide topnav and show hamburger*/
 @media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {display: none;}
