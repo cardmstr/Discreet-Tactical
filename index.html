@@ -1,87 +1,49 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html ng-app="discreetApp">
+  <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Discreet Tactical - Welcome</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <div class="nav-left">
-      <a href="#">
-          <div class="logo">
-              <img src="assets/Discreet-Full.png" alt="Discreet Tactical Logo">
-          </div></a>
-      <div class="nav-list">
-          <a href="#">
-              <div class="nav-item">
-                  Home
-              </div>
-          </a>
-          <div class="nav-divider">
-              <hr>
-          </div>
-          <a href="#">
-              <div class="nav-item">
-                  Available Courses
-              </div>
-          </a>
-          <div class="nav-divider">
-              <hr>
-          </div>
-          <a href="#">
-              <div class="nav-item">
-                  Utah Laws
-              </div>
-          </a>
-          <div class="nav-divider">
-              <hr>
-          </div>
-          <a href="#">
-              <div class="nav-item">
-                  News Stories
-              </div>
-          </a>
-          <div class="nav-divider">
-              <hr>
-          </div>
-          <a href="#">
-              <div class="nav-item">
-                  Testimonials
-              </div>
-          </a>
-          <div class="nav-divider">
-              <hr>
-          </div>
-          <a href="#">
-              <div class="nav-item">
-                  About DT
-              </div>
-          </a>
-          <div class="nav-divider">
-              <hr>
-          </div>
-          <a href="#">
-              <div class="nav-item">
-                  Contact Us
-              </div>
-          </a>
-          <div class="nav-divider">
-              <hr>
-          </div>
-          <div class="nav-footer">
-              &copy Discreet Tactical 2017
-          </div>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="assets/font-awesome.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+  </head>
+  <body ng-controller="main-ctl">
+      <a name="top"></a>
+      <ul class="topnav" id="myTopnav">
+        <li><a ui-sref="home">
+          <img src="assets/Discreet-Full.png" alt=""></a>
+        </li>
+        <li></li>
+        <li><a ui-sref="login">Log In</a></li>
+        <li><a ui-sref="contact">Resources</a></li>
+        <li><a ui-sref="partners">Partners</a></li>
+        <li><a ui-sref="faq">FAQ</a></li>
+        <li><a ui-sref="about">About</a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="showMobileNav()">&#9776;</a>
+        </li>
+      </ul>
+      <div class="announcement-bar">
+        <a ui-sref="classes"><h2 id="next-class">View Upcoming Permit Classes</h2></a>
       </div>
-  </div>
-    <div class="main-container">
-          <div class="header-img">
-            <img src="assets/placeholder.jpg" alt="Placeholder Image">
-          </div>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-    </div>
-</body>
 
+      <ui-view>Loading...</ui-view>
+
+
+      <footer>
+        <ul>
+          <li><a href="#">801-381-2416</a></li>
+          <li><a href="#">info@discreettactical.com</a></li>
+          <li><a href="#top">Back To Top</a></li>
+        </ul>
+        <p>&copyDiscreet Tactical - 2017</p>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script> <!--2.15 -->
+      <script src="./app/ui-js.js"></script>
+      <script src="./app/app.js"></script>
+      <script src="./app/ctrl.js"></script>
+      <script src="./app/svc.js"></script>
+  </body>
 </html>

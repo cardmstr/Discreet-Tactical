@@ -1,7 +1,11 @@
 *{
   text-decoration: none;
   font-family:sans-serif;
-  color:#ffffff;
+  /*color:#ffffff;*/
+}
+
+a{
+  color:#fff;
 }
 
 body{
@@ -14,12 +18,49 @@ li img{
   padding:5px;
 }
 
+p{
+  color: #000
+}
+footer p{
+  color: #fff
+}
+
+h1{
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+button{
+  width: 45%;
+  height: 45px;
+  background-color: #847260;
+  border-style: solid;
+  border-color: #847260;
+  border-width: 4px;
+}
+
+.disc-btn{
+  color: #fff;
+  font-size: 23px;
+}
+
+button:hover{
+  background-color: #AA9E91;
+  border-color: #AA9E91;
+}
+
+.buttons{
+  display: flex;
+  justify-content:space-between;
+}
+
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #847260;
+
 }
 /*remember color #333 and #555*/
 
@@ -32,7 +73,7 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 ul.topnav li a:hover {background-color: #AA9E91;}
@@ -56,14 +97,25 @@ h2{
 }
 
 .main-content{
-  height:600px;
+  min-height:100px;
   margin: 15px 30px 15px 30px;
   padding: 15px;
   background-color: #fff;
+
+}
+
+.main-img img{
+  width:100%;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.main-text h1 {
+  margin-top:0px;
 }
 
 footer{
   background-color: #333;
+  padding: 15px;
 }
 
 /*hide topnav and show hamburger*/
@@ -86,5 +138,22 @@ footer{
   ul.topnav.responsive li a {
     display: block;
     text-align: left;
+  }
+  ul.topnav li a{
+    font-size: 25px;
+  }
+
+}
+
+@media screen and (min-width:680px) {
+  .main-content{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 800px;
+    margin: 15px auto;
+  }
+  .main-img {
+    margin-right: 50px;
+    max-width: 450px;
   }
 }
