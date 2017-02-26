@@ -10,9 +10,25 @@ angular.module('discreetApp',['ui.router'])
         url: '/login',
         templateUrl: '/states/login.html'
       })
-      .state('about',{
-        url: '/about',
-        templateUrl: '/states/about.html'
+      .state('resources',{
+        url: '/resources',
+        templateUrl: '/states/resources.html'
+      })
+      .state('partners',{
+        url: '/partners',
+        templateUrl: '/states/partners.html'
+      })
+      .state('faq',{
+        url: '/faq',
+        templateUrl: '/states/faq.html'
+      })
+      .state('contact',{
+        url: '/contact',
+        templateUrl: '/states/contact'
+      })
+      .state('classes',{
+        url: '/classes',
+        templateUrl: '/states/classes'
       })
 
 

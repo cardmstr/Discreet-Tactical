@@ -14,12 +14,7 @@
         <li><a ui-sref="home">
           <img src="assets/Discreet-Full.png" alt=""></a>
         </li>
-        <li></li>
-        <li><a ui-sref="login">Log In</a></li>
-        <li><a ui-sref="contact">Resources</a></li>
-        <li><a ui-sref="partners">Partners</a></li>
-        <li><a ui-sref="faq">FAQ</a></li>
-        <li><a ui-sref="about">About</a></li>
+        <li ng-repeat="item in topMenu"><a ui-sref="{{item.uisref}}">{{ item.text }}</a> </li>
         <li class="icon">
           <a href="javascript:void(0);" onclick="showMobileNav()">&#9776;</a>
         </li>

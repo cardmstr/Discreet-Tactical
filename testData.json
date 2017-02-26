@@ -1,0 +1,63 @@
+{
+  "menu-items": [{
+      "text": "Log In",
+      "uisref": "login"
+    },{
+      "text": "Resources",
+      "uisref": "resources"
+    },{
+      "text": "Partners",
+      "uisref": "partners"
+    },{
+      "text": "FAQ",
+      "uisref": "faq"
+    },{
+      "text": "Contact",
+      "uisref": "contact"
+    }],
+
+  "classes": [{
+      "id": "cl12345",
+      "date": "3/15/2017",
+      "time": "13:45:00 MST",
+      "location": "002"
+    },{
+      "id": "cl23456",
+      "date": "2/12/2017",
+      "time": "18:30:00 MST",
+      "location": "001"
+    },{
+      "id": "cl34567",
+      "date": "4/23/2017",
+      "time": "10:00:00 MST",
+      "location": "002"
+    }],
+
+  "locations": [{
+      "id": "loc001",
+      "name": "Stahelis",
+      "address": "1234 test drive, Sandy, UT 84094",
+      "image": "testimage",
+      "description": "This place is cool and has cool things"
+    },{
+      "id": "loc002",
+      "name": "Darkside Tactical",
+      "address": "12276 S 1300 E, Draper, UT 84020",
+      "image": "testimage2",
+      "description": "This place is also cool and sells awesome things"
+    }],
+
+  "partners": [{
+      "id": "par001",
+      "name": "UDPL - Utah Defensive Pistol League",
+      "description": "The UDPL is a shooting club that organizes \"fun shoots\" to help members and participants develop situational awareness and practice real life defensive scenarios in a fun and competitive way.",
+      "website": "www.udpl.com",
+      "img": "https://www.udpl.net/images/udpl-logo.png"
+    },{
+      "id": "par002",
+      "name": "Top Gun Arms",
+      "description": "Top Gun Arms is a full line dealer as well as Manufacture of AR type rifles as well as specialty ammunition for hunting, protection and plinking",
+      "website": "www.topgunarms.com",
+      "img": "http://topgunarms.com/Portals/0/Top-gun-logo.png"
+    }]
+}
