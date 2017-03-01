@@ -1,0 +1,9 @@
+<ul class="topnav" id="myTopnav">
+  <li><a ui-sref="home">
+    <img src="assets/Discreet-Full.png" alt=""></a>
+  </li>
+  <li ng-repeat="item in topMenu"><a ui-sref="{{item.uisref}}">{{ item.text }}</a> </li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="showMobileNav()">&#9776;</a>
+  </li>
+</ul>
