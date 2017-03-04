@@ -1,5 +1,5 @@
 angular.module('discreetApp',['ui.router'])
-  .config(function($stateProvider, $urlRouterProvider){
+  .config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
     $stateProvider
       .state('home',{
@@ -31,6 +31,7 @@ angular.module('discreetApp',['ui.router'])
         templateUrl: '/states/classes'
       })
 
+      $locationProvider.html5Mode(true);
 
       $urlRouterProvider.otherwise('home');
   });
