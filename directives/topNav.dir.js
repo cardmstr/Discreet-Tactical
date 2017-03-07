@@ -4,6 +4,5 @@ angular.module('discreetApp').directive('topNav', function(){
     restrict: "E",
     replace: true,
     scope: true
-
   }
 })

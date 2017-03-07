@@ -1,3 +1,69 @@
 [{
-  
-  }]
+  "email": "cardmstr@me.com",
+  "name": {
+    "first": "Spencer",
+    "middle": "Earl",
+    "last": "Simons"
+  },
+  "phone": "8015092776",
+  "dob": "09/04/1990",
+  "addresses": {
+    "physical": {
+      "primary_number": "14632",
+      "street_predirection": "S",
+      "street_name": "Branford",
+      "street_suffix": "Ln",
+      "city_name": "Herriman",
+      "state_abbreviation": "UT",
+      "zipcode": "84096",
+      "plus4_code": "7482",
+      "delivery_point": "32",
+      "delivery_point_check_digit": "7"
+    },
+    "mailing": {
+      "primary_number": "14632",
+      "street_predirection": "S",
+      "street_name": "Branford",
+      "street_suffix": "Ln",
+      "city_name": "Herriman",
+      "state_abbreviation": "UT",
+      "zipcode": "84096",
+      "plus4_code": "7482",
+      "delivery_point": "32",
+      "delivery_point_check_digit": "7"
+    }
+  },
+  "bci-info": {
+    "state-country-ident": "state",
+    "sci-opt": "Utah",
+    "prev-names": [
+      "Roger Devina the Third"
+    ],
+    "id-type": "State Issued",
+    "id-num": "123456789",
+    "height": "70",
+    "weight": "180",
+    "eyes": "Hazel",
+    "hair": "Blonde",
+    "sex": "Male",
+    "race": "Caucasian",
+    "citizenship": "USA",
+    "alien-insnum": "",
+    "felony": false,
+    "crime": false,
+    "alcohol": false,
+    "narcotics": false,
+    "domestic-violence": false,
+    "mental": false,
+    "protective-order": false,
+    "discharged": false
+  },
+  "courses": [{
+    "class-type": "CFP",
+    "signed-up-date": "03/22/2017",
+    "cancelled-date": "",
+    "completed-date": "03/24/2017",
+    "received-permit": "06/01/2017",
+    "permit-exp": "03/24/2022"
+    }]
+}]

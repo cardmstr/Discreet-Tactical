@@ -31,7 +31,7 @@ angular.module('discreetApp',['ui.router'])
         templateUrl: '/states/classes'
       })
 
-      $locationProvider.html5Mode(true);
+      // $locationProvider.html5Mode(true); //Gets rid of the # in the URL but causes issues if page is refreshed
 
       $urlRouterProvider.otherwise('home');
   });
