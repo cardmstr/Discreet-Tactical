@@ -1,0 +1,34 @@
+{
+  "name": "discreet-tactical",
+  "version": "1.0.0",
+  "description": "\"Website for Discreet Tactical\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cardmstr/Discreet-Tactical.git"
+  },
+  "keywords": [
+    "discreet",
+    "tactical",
+    "concealed",
+    "firearm",
+    "permits",
+    "classes"
+  ],
+  "author": "Spencer Simons",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/cardmstr/Discreet-Tactical/issues"
+  },
+  "homepage": "https://github.com/cardmstr/Discreet-Tactical#readme",
+  "engines": {
+    "node": "7.4.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}
