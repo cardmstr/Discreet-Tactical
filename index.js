@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ //needed for ContactForm
 }));
 
 
-app.get('/', routeCtrl.getHome);
+//app.get('/', routeCtrl.getHome);
 
 
 app.post('/contactSubmit', routeCtrl.contactSubmit);
