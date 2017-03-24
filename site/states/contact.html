@@ -4,17 +4,16 @@
     <p>We'll do our best to answer any question you have and we also appreciate feedback about the courses you've taken!</p>
     <p>Please be aware that Discreet Tactical does not provide legal advice, protections, interpretations, or justification for any use of force with or without a firearm. <br> If you have any questions related to any of these topics, we suggest you seek proper legal counsel.</p>
 
-    <form class="pure-form pure-form-stacked" action="index.html" method="post">
-      <input class="pure-input-1" type="text" name="name" placeholder="Your Name">
-      <input class="pure-input-1" type="text" name="phone" placeholder="Your Phone #">
-      <input class="pure-input-1" type="text" name="email" placeholder="Your Email">
-      <textarea class="pure-input-1 pure-form-msg-large" type="text" name="message" placeholder="Message"></textarea>
+    <form class="pure-form pure-form-stacked" action="/contactSubmit" method="post">
+      <input class="pure-input-1" type="text" name="name" id="name" placeholder="Your Name" required>
+      <input class="pure-input-1" type="text" name="phone" id="phone" placeholder="Your Phone #" required>
+      <input class="pure-input-1" type="text" name="email" id="email" placeholder="Your Email" required>
+      <textarea class="pure-input-1 pure-form-msg-large" type="text" name="message" id="message" placeholder="Message" required></textarea>
 
       <div class="buttons">
-        <button type="button" class="disc-btn" name="Submit">Submit</button>
+        <button type="submit" class="disc-btn" value="Send" name="submit" id="submit">Submit</button>
       </div>
     </form>
-
 
   </div>
 </div>

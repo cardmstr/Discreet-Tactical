@@ -30,21 +30,22 @@ h1{
   margin-bottom: 5px;
 }
 
-button{
-  width: 45%;
-  height: 45px;
+button, a.button, a.pure-button{
   background-color: #847260;
   border-style: solid;
   border-color: #847260;
   border-width: 4px;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.disc-btn{
+.disc-btn, a.disc-btn{
   color: #fff;
   font-size: 23px;
+  margin: 5px;
 }
 
-button:hover{
+button:hover, a.button:hover{
   background-color: #AA9E91;
   border-color: #AA9E91;
 }
@@ -109,6 +110,10 @@ h2{
   border-radius: 5px 5px 5px 5px;
 }
 
+.main-text {
+  padding: 1em;
+}
+
 .main-text h1 {
   margin-top:0px;
 }
@@ -162,5 +167,8 @@ footer{
   .main-img {
     margin-right: 50px;
     max-width: 450px;
+  }
+  .main-txt-center{
+    margin: 0 auto;
   }
 }
