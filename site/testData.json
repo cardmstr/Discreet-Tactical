@@ -18,6 +18,7 @@
 
   "classes": [{
       "id": "cl12345",
+      "type": "Concealed Firearm Permit",
       "date": "3/15/2017",
       "time": "13:45:00 MST",
       "location": "loc002",
@@ -25,6 +26,7 @@
       "seatsTaken": "13"
     },{
       "id": "cl23456",
+      "type": "Concealed Firearm Permit",
       "date": "2/12/2017",
       "time": "18:30:00 MST",
       "location": "loc001",
@@ -32,6 +34,7 @@
       "seatsTaken": "24"
     },{
       "id": "cl34567",
+      "type": "Refuse To Be A Victim",
       "date": "4/23/2017",
       "time": "10:00:00 MST",
       "location": "loc002",

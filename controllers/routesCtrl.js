@@ -1,5 +1,6 @@
 var nodemailer = require('nodemailer');
-var secrets = require('../../secrets');
+var secrets = require('../secrets');
+var app = require('../index');
 
 module.exports = {
   contactSubmit: function(req,res){
@@ -33,6 +34,14 @@ module.exports = {
         res.send('contactSubmit ran');
     },
     getHome: function(req, res){
-      response.render('/');
+      res.render('/');
+    },
+    getClasses: function(req,res){
+      var db = app.get('db');
+
+      db.get_classes(function(err, classes){
+        console.log(err, classes);
+        res.send(classes);
+      });
     }
 }

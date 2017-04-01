@@ -1,0 +1,27 @@
+<div class="" style="overflow-x:auto">
+  <table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Date</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Course</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+      <div >
+        <tr ng-repeat="cl in classes">
+            <td><a ui-sref="/class/{{id}}"><button type="button" class="disc-btn">Sign Up</button></a></td>
+            <td>{{ cl.date }}</td>
+            <td>Thursday</td>
+            <td>{{ cl.time }}</td>
+            <td>{{ cl.name }}</td>
+            <td>{{ cl.location }}</td>
+        </tr>
+      </div>
+    </tbody>
+</table>
+
+</div>
