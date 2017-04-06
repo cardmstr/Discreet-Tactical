@@ -12,7 +12,15 @@ angular.module('discreetApp').controller('main-ctl',function($scope,mainSVC){
       .then(function(result){
         console.log('scope: ' + $scope.classes);
         $scope.classes = result;
-      })
+      });
+    }
+
+    var getClass = function(classid){
+      mainSVC.getClass(id)
+      .then(function(result){
+        console.log('scope: ' + $scope.class);
+        $scope.class = result;
+      });
     }
 
     getTopMenu();

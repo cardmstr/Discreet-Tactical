@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({ // ContactForm
 app.post('/contactSubmit', routeCtrl.contactSubmit);
 
 app.get('/api/classes', routeCtrl.getClasses);
+app.get('/api/classes/:id', routeCtrl.getClasses);
 
 app.listen((process.env.PORT || 5000), function(){
   console.log('app running on port ',(process.env.PORT || 5000));
