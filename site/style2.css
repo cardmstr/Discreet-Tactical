@@ -30,9 +30,9 @@ h1{
   margin-bottom: 5px;
 }
 
-button, a.button, a.pure-button{
+button, a.button, a.pure-button, a.pure-button-primary{
   background-color: #847260;
-  border-style: solid;
+  /*border-style: solid;*/
   border-color: #847260;
   border-width: 4px;
   text-align: center;

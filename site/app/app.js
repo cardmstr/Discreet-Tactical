@@ -10,6 +10,10 @@ angular.module('discreetApp',['ui.router'])
         url: '/login',
         templateUrl: '/states/login.html'
       })
+      .state('register',{
+        url: '/register',
+        templateUrl: '/states/register.html'
+      })
       .state('resources',{
         url: '/resources',
         templateUrl: '/states/resources.html'
