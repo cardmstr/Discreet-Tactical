@@ -4,6 +4,8 @@ var bodyParser = require('body-parser');
 var secrets = require('./secrets');
 var routeCtrl = require('./controllers/routesCtrl');
 var massive = require('massive');
+var passport = require('passport');
+var session = require('express-session');
 
 var connectionString = "postgres://spencersimons:@localhost/discreet_tactical";
 var massiveInstance = massive.connectSync({ connectionString });
@@ -16,13 +18,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ // ContactForm
     extended: true
 }));
+app.use(session(secrets.sessionObj));
+app.use(passport.initialize());
+app.use(passport.session());
 
 //app.get('/', routeCtrl.getHome); // Heroku deployment
 
 app.post('/contactSubmit', routeCtrl.contactSubmit);
 
 app.get('/api/classes', routeCtrl.getClasses);
-app.get('/api/classes/:id', routeCtrl.getClasses);
+app.get('/api/classes/:id', routeCtrl.getClass);
 
 app.listen((process.env.PORT || 5000), function(){
   console.log('app running on port ',(process.env.PORT || 5000));

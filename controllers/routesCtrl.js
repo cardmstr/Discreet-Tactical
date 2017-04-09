@@ -11,11 +11,11 @@ module.exports = {
 
       db.get_classes(function(err, classes){
         classes.forEach(function (course) {
-          var date = new Date(course.date.toString());
+          var date = new Date(course.cl_date.toString());
           var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-          course.date = `${months[date.getMonth()]} ${date.getDate()}`;
+          course.cl_date = `${months[date.getMonth()]} ${date.getDate()}`;
 
-          var time = course.time;
+          var time = course.cl_time;
           time = time.split(':');
           var hour = time[0];
           var min = time[1];
@@ -26,10 +26,19 @@ module.exports = {
           } else {
             ind = 'AM';
           };
-          course.time = `${hour}:${min} ${ind}`;
+          course.cl_time = `${hour}:${min} ${ind}`;
         });
 
         res.send(classes);
+      });
+    },
+    getClass: function(req,res){
+      var db = app.get('db');
+      var id = req.params.id;
+
+      db.get_class(id, function(err, oneClass){
+        console.log('id:', id,' class: ', oneClass, ' errors: ', err);
+        res.send(oneClass);
       });
     },
     contactSubmit: function(req,res){

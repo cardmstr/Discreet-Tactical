@@ -25,11 +25,13 @@
   },
   "homepage": "https://github.com/cardmstr/Discreet-Tactical#readme",
   "dependencies": {
+    "bcrypt-nodejs": "latest",
     "body-parser": "^1.17.1",
     "cors": "^2.8.3",
     "express": "^4.15.2",
     "express-session": "^1.15.2",
     "massive": "^2.6.0",
-    "node-mailer": "^0.1.1"
+    "node-mailer": "^0.1.1",
+    "passport": "^0.3.2"
   }
 }

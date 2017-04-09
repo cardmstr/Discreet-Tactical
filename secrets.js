@@ -11,5 +11,10 @@ module.exports = {
       database : 'discreet_tactical'
     },
     searchPath: 'knex,public'
+  },
+  sessionObj: {
+    secret: 'somethingDiscr33tTh15W@yShot!',
+    resave: false,
+    saveUninitialized: false
   }
 }
