@@ -16,7 +16,7 @@ angular.module('discreetApp').controller('main-ctl',function($scope,mainSVC){
     }
 
     var getClass = function(classid){
-      mainSVC.getClass(id)
+      mainSVC.getClass(classid)
       .then(function(result){
         console.log('scope: ' + $scope.class);
         $scope.class = result;
@@ -24,9 +24,23 @@ angular.module('discreetApp').controller('main-ctl',function($scope,mainSVC){
     }
 
     var login = function(credentials){
-      
+
     }
 
     getTopMenu();
     getClasses();
+});
+
+angular.module('discreetApp').controller('classCtrl', function($scope, $state, mainSVC){
+  console.log('$scope: ', $scope, ' $state: ', $state);
+  // mainSVC.getClass()
+  //
+  // .forEach(function(location){
+  //   if(location.id==$state.params.id){
+  //     $scope.bookedTrip = location;
+  //   }
+  // })
+  //
+  // $scope.bookedFrom = $state.params.from;
+  // console.log('params:',$state.params);
 })
