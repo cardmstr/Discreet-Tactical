@@ -6,3 +6,8 @@ function showMobileNav() {
         x.className = "topnav";
     }
 }
+
+function hideMobileNav() {
+  var x = document.getElementById("myTopnav");
+  x.className = "topnav";
+}

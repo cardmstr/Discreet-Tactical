@@ -30,9 +30,9 @@ h1{
   margin-bottom: 5px;
 }
 
-button, a.button, a.pure-button{
+button, a.button, a.pure-button, a.pure-button-primary{
   background-color: #847260;
-  border-style: solid;
+  /*border-style: solid;*/
   border-color: #847260;
   border-width: 4px;
   text-align: center;
@@ -100,7 +100,6 @@ h2{
 .main-content{
   min-height:100px;
   margin: 15px 30px 15px 30px;
-  padding: 15px;
   background-color: #fff;
 
 }
@@ -129,6 +128,31 @@ footer{
 
 .pure-form-msg-large{
   height: 125px;
+}
+
+.pure-u-1-3-hide-rel{
+  overflow: hidden;
+  position: relative;
+}
+
+.pure-img-hide-rel{
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.photo-box{
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+}
+
+.faq-aside{
+  max-width: 95%;
+  margin-left: auto;
 }
 
 /*hide topnav and show hamburger*/
