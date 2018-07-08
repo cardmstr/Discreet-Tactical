@@ -1,5 +1,5 @@
 module.exports = {
   emailID: "card.master.acespades@gmail.com",
-  emailPass: "saruwatari953",
+  emailPass: "",
   emailTo: "Spencer Simons <spencersimons09@gmail.com>"
 }
